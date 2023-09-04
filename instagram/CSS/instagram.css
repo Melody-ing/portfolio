@@ -1,0 +1,281 @@
+* {
+  border: 0;
+  margin: 0;
+  /* color: rgba(85, 70, 101, 1);
+  color: rgba(246, 238, 255, 1);
+  color: rgba(143, 173, 136, 1);
+  color: rgb(64, 56, 72); */
+  font-family: "Merriweather", serif;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+}
+
+header {
+  background: rgba(246, 238, 255, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 1200px;
+}
+
+.headercontent {
+  box-sizing: border-box;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  /* 讓元件都擠在同一個水平上 */
+  justify-content: space-between;
+  /* 調整水平距離，讓他們待在左右兩邊 */
+  padding: 20px;
+  padding-left: 35px;
+}
+
+.logo {
+  float: left;
+  font-size: 50px;
+  text-decoration: none;
+  font-family: "Pacifico", cursive;
+}
+
+.logo:visited,
+.logo:link {
+  color: rgba(85, 70, 101, 1);
+}
+
+.logo:hover,
+.logo:active {
+  color: rgba(85, 70, 101, 1);
+}
+
+/* list */
+
+.list {
+  display: flex;
+  list-style: none;
+  /* 把list的原點去掉 */
+  align-items: center;
+}
+
+.listitem {
+  box-sizing: border-box;
+  padding: 20px 20px;
+  text-decoration: none;
+  /* 去掉底線 */
+  font-size: 22px;
+  color: rgba(85, 70, 101, 1);
+}
+
+.listitem:link,
+.listitem:visited {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.listitem:hover,
+.listitem:active {
+  background: rgba(85, 70, 101, 1);
+  color: rgba(246, 238, 255, 1);
+}
+
+main {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background: rgba(246, 238, 255, 0.6); */
+
+  height: 70vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.4),
+      rgba(34, 34, 34, 0.4)
+    ),
+    url(background.png);
+  background-size: cover;
+  background-position: 0px -250px;
+}
+
+.maincontent {
+  width: 80%;
+  margin: auto;
+  margin-top: 250px;
+}
+
+.maintext {
+  font-size: 40px;
+  color: rgb(251, 243, 243);
+  width: 80%;
+  padding-bottom: 0px;
+}
+
+/* section */
+section {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+
+  -webkit-column-count: 3; /*chrome,safari,opera*/
+  -moz-column-count: 3; /*firefox*/
+  column-count: 3;
+
+  -webkit-column-count: 20px; /*chrome,safari,opera*/
+  -moz-column-count: 20px; /*firefox*/
+  column-gap: 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px
+}
+
+.box {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  margin: 12px 0px 0px;
+  z-index: 10;
+
+  box-shadow: 2px 2px 8px rgba(173, 181, 189, 1);
+  /* Box-shadow: 水平位移 垂直位移 模糊程度 顏色 */
+  border-radius: 10px; /*圓角*/
+  overflow: hidden; /*隱藏溢出的部分使其不可見。*/
+}
+
+.imgbox {
+  width: 100%;
+  overflow: hidden;
+}
+
+.box .imgbox img {
+  float: left;
+  width: 100%;
+
+  transform: scale(1, 1); /*standard suntax*/
+  -ms-transform: scale(1, 1); /*IE 9*/
+  -webkit-transform: scale(1, 1); /*safari*/
+
+  transition: transform 1.5s;
+  -webkit-transform: 1.5s;
+
+  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out; /*safari*/
+}
+
+.box:hover .imgbox img {
+  transform: scale(1.2, 1.2);
+  /*standard suntax*/
+  -ms-transform: scale(1.2, 1.2);
+  /*IE 9*/
+  -webkit-transform: scale(1.2, 1.2);
+  /*safari*/
+}
+
+.box h3 {
+  box-sizing: border-box;
+  padding: 20px 20px 0px 20px;
+  color: rgb(187, 185, 144);
+  font-size: 26px;
+}
+
+.box p {
+  box-sizing: border-box;
+  padding: 20px 20px;
+  color: rgb(70, 39, 13);
+  font-size: 16px;
+}
+
+.head {
+  display: inline-block;
+  padding: 0px 20px 20px;
+}
+
+/* aside */
+
+aside {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 100000;
+}
+
+aside {
+  text-decoration: none;
+}
+
+.totop {
+  width: 44px;
+  height: 44px;
+  background: rgb(79, 97, 76);
+  /* png黨的是去背景，所以可以選擇要不要background 可以選擇他要不要向壁紙一樣重複出現 */
+  background-size: 200%;
+  background-position: 0px 0px;
+  /* x軸位置 y軸位置 */
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: rgba(246, 238, 255, 1);
+}
+
+.totop:visited,
+.totop:link {
+  text-decoration: none;
+}
+
+.totop:hover,
+.totop:active {
+  background: rgba(143, 173, 136, 1);
+  background-size: 200%;
+  background-position: -44px 0px;
+  /* 事實上這邊跟.totop的兩個箭頭是在同一張圖上，只是點到的時候圖片位置換了，所以這樣hover的時候他的圖片就不需要重新跑，因為一開始就跑好了 */
+}
+
+/* footer */
+footer {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 1200px;
+  background: rgba(246, 238, 255, 1);
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  margin-top: 50px;
+  
+}
+
+.input h1 {
+  text-align: center;
+}
+
+.input_field {
+  border: solid 1px black;
+  display: flex;
+  width: 30%;
+  margin: 30px auto;
+}
+
+.input_btn {
+  text-align: center;
+  background: rgb(192, 192, 192);
+  display: flex;
+  margin: auto;
+  padding: 5px 10px;
+  /* border: solid 1px black; */
+  border-radius: 10px;
+  transition: .2s;
+}
+
+.input_btn:hover {
+  cursor: pointer;
+  background: lightcoral;
+  color: aliceblue;
+}

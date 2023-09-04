@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="CSS/interaction.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>個人作品集</title>
+  </head>
+  <body>
+    <header>
+      <div class="headercontent">
+        <a
+          href="../index.html"
+          class="logo"
+          >Melody-ing</a
+        >
+        <ul class="list">
+          <li>
+            <a
+              href="../research/research.html"
+              class="listitem"
+              ><b>專題研究</b></a
+            >
+          </li>
+          <li>
+            <a href="../interactiondesign/interaction.html" class="listitem"><b>互動設計</b></a>
+          </li>
+          <li>
+            <a
+              href="../instagram/instagram.html"
+              class="listitem"
+              ><b>網站經營</b></a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="maincontent">
+        <h1 class="maintext">互動設計課程之使用者測試</h1>
+      </div>
+    </main>
+
+    <section>
+      <div class="hypo">
+        <h1>Funliday使用者測試</h1>
+        <div class="hypointro">
+          <div>
+            <h2>動機目的</h2>
+            <p class="hypo1">
+              網路上存在不少專為「旅遊規劃」而設計的網站，提供使用者各種方便的功能。然而即便前述的網站提供方便的搜尋、規劃功能，但到了旅遊地，重要的導航找路，還是會回到Google地圖上。因此，我們想要設計一個能夠真正滿足使用者需求、功能完整的旅遊規劃網站。
+            </p>
+          </div>
+          <img src="img/road.jpg" alt="Taiwan's road" />
+        </div>
+      </div>
+
+      <div class="motivation">
+        <h2>測試流程</h2>
+        <p>
+          在Funliday讓受試者規劃花蓮兩天一夜的行程，在這項測試當中會請受試者完成三項任務並填寫易用性問卷。
+        </p>
+        <img src="img/method.jpg" />
+      </div>
+
+      <div class="task">
+        <h2>測試內容</h2>
+        <div class="speciality">
+          <div class="specialityflex">
+            <div class="specialitycontent">
+              <img class="spe_img" src="img/task1.jpg" />
+              <h3>Task 1</h3>
+              <h4>用Funliday搜尋景點</h4>
+            </div>
+
+            <div class="specialitycontent">
+              <img class="spe_img" src="img/task2.jpg" />
+              <h3>Task 2</h3>
+              <h4>將景點安排入行程中</h4>
+            </div>
+
+            <div class="specialitycontent">
+              <img class="spe_img" src="img/task3.jpg" />
+              <h3>Task 3</h3>
+              <h4>整理遊玩動線</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="result">
+      <h2>測試結果</h2>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>完成時間、評分</th>
+              <th>User 1</th>
+              <th>User 2</th>
+              <th>User 3</th>
+              <th>User 4</th>
+              <th>User 5</th>
+              <th>User 6</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>Task 1</th>
+              <td>3m50s</td>
+              <td>2m46s</td>
+              <td>2m10s</td>
+              <td>2m22s</td>
+              <td>1m53s</td>
+              <td>4m10s</td>
+            </tr>
+            <tr>
+              <th>Task 2</th>
+              <td>2m02s</td>
+              <td>1m12s</td>
+              <td>1m27s</td>
+              <td>1m20s</td>
+              <td>1m49s</td>
+              <td>3m05s</td>
+            </tr>
+            <tr>
+              <th>Task 3</th>
+              <td>10m52s</td>
+              <td>8m28s</td>
+              <td>7m12s</td>
+              <td>8m40s</td>
+              <td>9m16s</td>
+              <td>11m10s</td>
+            </tr>
+            <tr>
+              <th>SUS score</th>
+              <td>60</td>
+              <td>95</td>
+              <td>97.5</td>
+              <td>75</td>
+              <td>32.5</td>
+              <td>52.5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <div class="future">
+        <h3>功能性問題</h3>
+        <ul>
+          <li>
+            由於網頁中的地圖只有簡單的直線，使用者無法明確的知道路線，因此使用者需要透過手機掃描QRcode才能得知詳細的路徑規劃。
+          </li>
+          <li>
+            在測試過程中有使用者發現交通預測時間可能不太準確。例如開車兩分鐘的時間走路卻要1小時13分，似乎不太合理。
+          </li>
+        </ul>
+
+        <h3>使用性問題</h3>
+        <ul>
+          <li>搜尋景點的時候必須先搜尋縣市再收尋景點，不然會找不到景點。</li>
+          <li>
+            需要額外點擊編輯才能改變時間，若是點擊時間就可以更改的話應該會比較符合使用習慣。
+          </li>
+          <li>
+            搜尋引擎不夠精確，會找到其他跟搜尋景點無關的資訊。原因可能是搜尋引擎偵測到"景點"這個關鍵字，因此查詢到的資料會與使用者想要的不一致。
+          </li>
+        </ul>
+      </div>
+      <hr />
+
+      <div class="question">
+        <h2>使用便條紙來進行後續網站發想</h2>
+        <div class="ad">
+          <img src="img/note1.jpg" alt="The Ad of promotion focus." />
+          <img src="img/note2.jpg" alt="The Ad of prevention focus." />
+        </div>
+      </div>
+
+      <div class="after">
+        <h3>後續發展</h3>
+        <p>
+          我們想要的網站是讓我們在旅行的過程中只需要使用一個網站就可以完成我們旅行的所有規劃，而不用一個網站找景點、一個網站排行程再用另一個網站規劃路線。因此後續的研究會以這次的研究結果為鑑，思考出一個全新架構的網站！
+        </p>
+      </div>
+
+      
+    </section>
+
+    
+        
+      
+     
+
+  
+  </body>
+  <footer>Copyright © 2022 All rights reserved.</footer>
+</html>

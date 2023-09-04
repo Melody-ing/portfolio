@@ -1,0 +1,340 @@
+* {
+  border: 0;
+  margin: 0;
+  /* color: rgba(85, 70, 101, 1);
+  color: rgba(246, 238, 255, 1);
+  color: rgba(143, 173, 136, 1);
+  color: rgb(64, 56, 72); */
+  font-family: "Merriweather", serif;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+}
+
+header {
+  background: rgba(246, 238, 255, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 1200px;
+}
+
+.headercontent {
+  box-sizing: border-box;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  /* 讓元件都擠在同一個水平上 */
+  justify-content: space-between;
+  /* 調整水平距離，讓他們待在左右兩邊 */
+  padding: 20px;
+  padding-left: 35px;
+}
+
+.logo {
+  float: left;
+  font-size: 50px;
+  text-decoration: none;
+  font-family: "Pacifico", cursive;
+}
+
+.logo:visited,
+.logo:link {
+  color: rgba(85, 70, 101, 1);
+}
+
+.logo:hover,
+.logo:active {
+  color: rgba(85, 70, 101, 1);
+}
+
+/* list */
+
+.list {
+  display: flex;
+  list-style: none;
+  /* 把list的原點去掉 */
+  align-items: center;
+}
+
+.listitem {
+  box-sizing: border-box;
+  padding: 20px 20px;
+  text-decoration: none;
+  /* 去掉底線 */
+  font-size: 22px;
+  color: rgba(85, 70, 101, 1);
+}
+
+.listitem:link,
+.listitem:visited {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.listitem:hover,
+.listitem:active {
+  background: rgba(85, 70, 101, 1);
+  color: rgba(246, 238, 255, 1);
+}
+
+/* section */
+
+section {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 80%;
+}
+
+/* main */
+
+main {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background: rgba(246, 238, 255, 0.6); */
+
+  height: 70vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.4),
+      rgba(34, 34, 34, 0.4)
+    ),
+    url(taiwan.jpg);
+  background-size: cover;
+}
+
+.maincontent {
+  width: 80%;
+  margin: auto;
+}
+
+.maintext {
+  font-size: 44px;
+  color: rgb(251, 243, 243);
+  width: 65%;
+}
+
+/* hypo */
+.hypo {
+  /* padding: 0 60px; */
+}
+
+.hypo h1 {
+  font-size: 50px;
+  color: rgb(111, 138, 105);
+}
+
+.hypointro {
+  display: flex;
+  padding-top: 60px;
+}
+
+.hypointro h2 {
+  font-size: 30px;
+  color: rgb(64, 56, 72);
+}
+
+.hypo1 {
+  font-size: 20px;
+  color: rgb(64, 56, 72);
+  line-height: 50px;
+  padding-top: 30px;
+  padding-right: 40px;
+}
+
+.hypo img {
+  height: 400px;
+}
+
+/* motivation */
+.motivation {
+  border: 6px solid #d8c5c5;
+  border-radius: 30px;
+  width: 80%;
+  padding: 40px;
+  margin: 60px auto 0 auto;
+}
+
+.motivation h2 {
+  padding: 20px;
+  font-size: 30px;
+  color: rgba(85, 70, 101, 1);
+}
+
+.motivation p {
+  padding: 0 20px 20px 20px;
+  font-size: 20px;
+  color: rgba(85, 70, 101, 1);
+  line-height: 50px;
+}
+
+.motivation img {
+  display: flex;
+  justify-items: center;
+  height: 250px;
+}
+
+.speciality {
+  color: rgb(64, 56, 72);
+  display: flex;
+  justify-content: center;
+}
+
+.specialityflex {
+  display: flex;
+
+  justify-content: center;
+}
+
+.specialitycontent {
+  align-items: center;
+  padding: 80px;
+  color: rgb(64, 56, 72);
+}
+
+.task h2 {
+  font-size: 30px;
+  color: rgb(64, 56, 72);
+  padding-top: 60px;
+}
+
+.spe_img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.task h3 {
+  font-size: 40px;
+  color: rgb(229, 226, 180);
+  padding-top: 10px;
+}
+
+.specialitycontent h4 {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* table */
+.result h2 {
+  font-size: 30px;
+  color: rgb(64, 56, 72);
+}
+
+.table {
+  color: rgb(64, 56, 72);
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 90%;
+  margin-top: 60px;
+  font-size: 18px;
+  /* border: 1px solid #343a40; */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  width: 60px;
+  /* border: 1px solid #343a40; */
+  padding: 16px 24px;
+  text-align: left;
+}
+
+thead tr {
+  background-color: rgba(85, 70, 101, 1);
+  color: #fff;
+}
+
+thead th {
+  width: 75%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7efff;
+}
+
+.future {
+  padding-top: 30px;
+}
+
+.future h3 {
+  font-size: 24px;
+  padding: 20px;
+  color: rgb(64, 56, 72);
+}
+
+.future ul {
+  font-size: 20px;
+  padding: 0 20px 20px 50px;
+  color: rgb(64, 56, 72);
+  line-height: 50px;
+}
+
+.ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.question h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding: 60px 0 40px 0;
+  color: rgb(64, 56, 72);
+}
+
+.question img {
+  height: 435px;
+  width: auto;
+  padding: 20px;
+}
+
+.after {
+}
+
+.after h3 {
+  font-size: 30px;
+  padding-top: 60px;
+  color: rgb(64, 56, 72);
+}
+
+.after p {
+  font-size: 20px;
+  padding-top: 30px;
+  color: rgb(64, 56, 72);
+  line-height: 50px;
+}
+
+/* footer */
+footer {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 1200px;
+  background: rgba(246, 238, 255, 1);
+  padding: 20px 10px;
+  color: rgb(64, 56, 72);
+  display: flex;
+  justify-content: center;
+}
+
