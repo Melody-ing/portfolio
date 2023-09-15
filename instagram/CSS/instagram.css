@@ -25,7 +25,7 @@ header {
 .headercontent {
   box-sizing: border-box;
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   /* 讓元件都擠在同一個水平上 */
   justify-content: space-between;
@@ -36,7 +36,7 @@ header {
 
 .logo {
   float: left;
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
   font-family: "Pacifico", cursive;
 }
@@ -65,7 +65,7 @@ header {
   padding: 20px 20px;
   text-decoration: none;
   /* 去掉底線 */
-  font-size: 22px;
+  font-size: 20px;
   color: rgba(85, 70, 101, 1);
 }
 
@@ -95,9 +95,9 @@ main {
       rgba(34, 34, 34, 0.4),
       rgba(34, 34, 34, 0.4)
     ),
-    url(background.png);
+    url(blesswall.jpg);
   background-size: cover;
-  background-position: 0px -250px;
+  background-position: 0px -200px;
 }
 
 .maincontent {
@@ -107,7 +107,7 @@ main {
 }
 
 .maintext {
-  font-size: 40px;
+  font-size: 34px;
   color: rgb(251, 243, 243);
   width: 80%;
   padding-bottom: 0px;
@@ -129,7 +129,7 @@ section {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px
+  gap: 20px;
 }
 
 .box {
@@ -148,12 +148,16 @@ section {
 
 .imgbox {
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .box .imgbox img {
+  height: 250px;
+  overflow: hidden;
+  object-fit: cover;
   float: left;
   width: 100%;
+  margin-bottom: 20px;
 
   transform: scale(1, 1); /*standard suntax*/
   -ms-transform: scale(1, 1); /*IE 9*/
@@ -177,9 +181,9 @@ section {
 
 .box h3 {
   box-sizing: border-box;
-  padding: 20px 20px 0px 20px;
-  color: rgb(187, 185, 144);
-  font-size: 26px;
+  padding: 20px;
+  color: rgb(147, 145, 113);
+  font-size: 22px;
 }
 
 .box p {
@@ -249,7 +253,6 @@ footer {
 
 .input {
   margin-top: 50px;
-  
 }
 
 .input h1 {
@@ -271,7 +274,7 @@ footer {
   padding: 5px 10px;
   /* border: solid 1px black; */
   border-radius: 10px;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .input_btn:hover {

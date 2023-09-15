@@ -25,7 +25,7 @@ header {
 .headercontent {
   box-sizing: border-box;
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   /* 讓元件都擠在同一個水平上 */
   justify-content: space-between;
@@ -36,7 +36,7 @@ header {
 
 .logo {
   float: left;
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
   font-family: "Pacifico", cursive;
 }
@@ -65,7 +65,7 @@ header {
   padding: 20px 20px;
   text-decoration: none;
   /* 去掉底線 */
-  font-size: 22px;
+  font-size: 20px;
   color: rgba(85, 70, 101, 1);
 }
 
@@ -115,7 +115,7 @@ main {
 }
 
 .maintext {
-  font-size: 44px;
+  font-size: 40px;
   color: rgb(251, 243, 243);
   width: 65%;
 }
@@ -126,7 +126,7 @@ main {
 }
 
 .hypo h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: rgb(111, 138, 105);
 }
 
@@ -136,12 +136,12 @@ main {
 }
 
 .hypointro h2 {
-  font-size: 30px;
+  font-size: 28px;
   color: rgb(64, 56, 72);
 }
 
 .hypo1 {
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(64, 56, 72);
   line-height: 50px;
   padding-top: 30px;
@@ -163,13 +163,13 @@ main {
 
 .motivation h2 {
   padding: 20px;
-  font-size: 30px;
+  font-size: 28px;
   color: rgba(85, 70, 101, 1);
 }
 
 .motivation p {
   padding: 0 20px 20px 20px;
-  font-size: 20px;
+  font-size: 18px;
   color: rgba(85, 70, 101, 1);
   line-height: 50px;
 }
@@ -199,7 +199,7 @@ main {
 }
 
 .task h2 {
-  font-size: 30px;
+  font-size: 28px;
   color: rgb(64, 56, 72);
   padding-top: 60px;
 }
@@ -211,7 +211,7 @@ main {
 }
 
 .task h3 {
-  font-size: 40px;
+  font-size: 38px;
   color: rgb(229, 226, 180);
   padding-top: 10px;
 }
@@ -221,12 +221,12 @@ main {
   justify-content: center;
   width: 200px;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* table */
 .result h2 {
-  font-size: 30px;
+  font-size: 28px;
   color: rgb(64, 56, 72);
 }
 
@@ -241,7 +241,7 @@ main {
 table {
   width: 90%;
   margin-top: 60px;
-  font-size: 18px;
+  font-size: 16px;
   /* border: 1px solid #343a40; */
   border-collapse: collapse;
 }
@@ -276,13 +276,13 @@ tbody tr:nth-child(even) {
 }
 
 .future h3 {
-  font-size: 24px;
+  font-size: 28px;
   padding: 20px;
   color: rgb(64, 56, 72);
 }
 
 .future ul {
-  font-size: 20px;
+  font-size: 18px;
   padding: 0 20px 20px 50px;
   color: rgb(64, 56, 72);
   line-height: 50px;
@@ -299,7 +299,7 @@ tbody tr:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 34px;
   padding: 60px 0 40px 0;
   color: rgb(64, 56, 72);
 }
@@ -314,13 +314,13 @@ tbody tr:nth-child(even) {
 }
 
 .after h3 {
-  font-size: 30px;
+  font-size: 28px;
   padding-top: 60px;
   color: rgb(64, 56, 72);
 }
 
 .after p {
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 30px;
   color: rgb(64, 56, 72);
   line-height: 50px;
@@ -337,4 +337,3 @@ footer {
   display: flex;
   justify-content: center;
 }
-

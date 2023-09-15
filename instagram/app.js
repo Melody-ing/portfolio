@@ -1,4 +1,5 @@
-const url = './list.json';
+// const url = './list.json';
+const url = "./list-graduate.json";
 
 let array = [];
 
@@ -7,10 +8,10 @@ const fetchData = (url) => {
     .then((response) => response.json())
     .then((data) => {
       array = data;
-      console.log('array', array);
+      console.log("array", array);
       displayData(array);
     })
-    .catch((err) => console.log('error', err));
+    .catch((err) => console.log("error", err));
 };
 
 fetchData(url);
@@ -25,26 +26,23 @@ const displayData = (items) => {
         </div>
 
         <h3>${item.title}</h3>
-        <p>
-          ${item.paragraph}
-        </p>
+        
         </div>
         `;
     })
-    .join('');
-  const zone = document.getElementById('cards');
+    .join("");
+  const zone = document.getElementById("cards");
   zone.innerHTML = display;
   //   document.body.appendChild;
 };
 
 const getInput = () => {
-  const inputImg = document.getElementById('input_img').value;
-  const inputTitle = document.getElementById('input_title').value;
-  const inputParagraph = document.getElementById('input_paragraph').value;
+  const inputImg = document.getElementById("input_img").value;
+  const inputTitle = document.getElementById("input_title").value;
+  // const inputParagraph = document.getElementById("input_paragraph").value;
   const newData = `{
     "img": "${inputImg}",
     "title": "${inputTitle}",
-    "paragraph": "${inputParagraph}"
   }`;
 
   // console.log(newData);
