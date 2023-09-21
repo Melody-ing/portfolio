@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="CSS/research.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/research.css" />
+    <link rel="stylesheet" href="../CSS/general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,81 +18,89 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="../js/footer.js"></script>
     <title>個人作品集</title>
   </head>
   <body>
-    <header>
-      <div class="headercontent">
-        <a href="../index.html" class="logo">Melody-ing</a>
-        <ul class="list">
-          <li>
-            <a href="../research/research.html" class="listitem"
-              ><b>專題研究</b></a
-            >
-          </li>
-          <li>
-            <a href="../interactiondesign/interaction.html" class="listitem"
-              ><b>互動設計</b></a
-            >
-          </li>
-          <li>
-            <a href="../instagram/instagram.html" class="listitem"
-              ><b>活動規劃</b></a
-            >
-          </li>
-        </ul>
-      </div>
+    <header class="header">
+      <a href="../index.html" class="logo">Melody-ing</a>
+      <ul class="header-list">
+        <li>
+          <a href="../research/research.html" class="header-list-link"
+            ><b>專題研究</b></a
+          >
+        </li>
+        <li>
+          <a
+            href="../interactiondesign/interaction.html"
+            class="header-list-link"
+            ><b>互動設計</b></a
+          >
+        </li>
+        <li>
+          <a href="../instagram/instagram.html" class="header-list-link"
+            ><b>活動規劃</b></a
+          >
+        </li>
+      </ul>
     </header>
 
-    <main>
-      <div class="maincontent">
-        <h1 class="maintext">
+    <main class="main">
+      <div class="main-container">
+        <h1 class="main-secondary">
           敬畏感對不同訊息調節焦點廣告以及商品種類偏好之影響
         </h1>
       </div>
     </main>
 
     <section>
-      <div class="question">
-        <h2>您比較喜歡哪一則廣告呢？</h2>
-        <div class="ad">
-          <img src="img/promotion.JPG" alt="The Ad of promotion focus." />
-          <img src="img/prevention.JPG" alt="The Ad of prevention focus." />
-        </div>
-      </div>
-
-      <div class="hypo">
-        <h2 class="hypop1">
-          觀看了頁面最上方的風景照後，您應該會更喜歡左邊的廣告！
-        </h2>
-        <hr />
-        <div class="hypointro">
-          <div>
-            <h2>研究成果</h2>
-            <p class="hypop2">
-              在我的畢業專題研究結果中發現，當人們接收到<b>敬畏感</b>時會更偏好以<b>促進焦點</b>來敘述的廣告詞(例：超越、增強或成長等)。而當我們面對壯麗的美景、雄偉的建築或是偉大的藝術作品時會產生一種震驚、難以消化的情緒，這種情緒就是<b>敬畏感</b>。
-            </p>
+      <div class="container">
+        <div class="question">
+          <h2 class="heading-tertiary">您比較喜歡哪一則廣告呢？</h2>
+          <div class="question-box">
+            <img src="img/promotion.JPG" alt="The Ad of promotion focus." />
+            <img src="img/prevention.JPG" alt="The Ad of prevention focus." />
           </div>
-          <img src="img/waterfall.jpg" alt="waterfall" />
         </div>
       </div>
 
-      <div class="motivation">
-        <h2>研究動機</h2>
-        <p>
-          平時在看廣告時，我就很好奇為甚麼有些廣告特別能夠吸引我？沒想到在實際進行研究後才發現到廣告中暗藏了許多的心理學，也在研究過程中找到我對<b>以人為本</b>設計的興趣！
-        </p>
+      <div class="container">
+        <div class="result">
+          <h2 class="result-box heading-tertiary">
+            觀看了頁面最上方的風景照後，您應該會更喜歡左邊的廣告！
+          </h2>
+          <hr />
+          <div class="result-content">
+            <div>
+              <h2 class="heading-tertiary">研究成果</h2>
+              <p class="result-content-text">
+                在我的畢業專題研究結果中發現，當人們接收到<b>敬畏感</b>時會更偏好以<b>促進焦點</b>來敘述的廣告詞(例：超越、增強或成長等)。而當我們面對壯麗的美景、雄偉的建築或是偉大的藝術作品時會產生一種震驚、難以消化的情緒，這種情緒就是<b>敬畏感</b>。
+              </p>
+            </div>
+            <img src="img/waterfall.jpg" alt="waterfall" />
+          </div>
+        </div>
       </div>
 
-      <div class="future">
-        <h2>後續發想</h2>
-        <p>
-          希望能夠將我的專題研究結果實際應用在網站上，就如同在這個頁面中所呈現的形式。若是能夠透過敬畏影片或圖片來<b>提升消費者對廣告的偏好或是購買意願</b>，就能夠更精準地去進行廣告的設計！
-        </p>
+      <div class="container">
+        <div class="motivation">
+          <h2 class="heading-tertiary">研究動機</h2>
+          <p class="motivation-text">
+            平時在看廣告時，我就很好奇為甚麼有些廣告特別能夠吸引我？沒想到在實際進行研究後才發現到廣告中暗藏了許多的心理學，也在研究過程中找到我對<b>以人為本</b>設計的興趣！
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="future">
+          <h2 class="heading-tertiary">後續發想</h2>
+          <p class="motivation-text">
+            希望能夠將我的專題研究結果實際應用在網站上，就如同在這個頁面中所呈現的形式。若是能夠透過敬畏影片或圖片來<b>提升消費者對廣告的偏好或是購買意願</b>，就能夠更精準地去進行廣告的設計！
+          </p>
+        </div>
       </div>
     </section>
 
     <footer></footer>
-    <script src="../js/footer.js"></script>
   </body>
 </html>

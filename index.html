@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="CSS/homework.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/homework.css" />
+    <link rel="stylesheet" href="CSS/general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,81 +18,77 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="js/footer.js"></script>
     <title>個人作品集</title>
   </head>
   <body>
-    <header>
-      <div class="headercontent">
-        <a href="#" class="logo">Melody-ing</a>
-        <ul class="list">
-          <li>
-            <a href="research/research.html" class="listitem"
-              ><b>專題研究</b></a
-            >
-          </li>
-          <li>
-            <a href="interactiondesign/interaction.html" class="listitem"
-              ><b>互動設計</b></a
-            >
-          </li>
-          <li>
-            <a href="instagram/instagram.html" class="listitem"
-              ><b>活動規劃</b></a
-            >
-          </li>
-        </ul>
-      </div>
+    <header class="header">
+      <a href="#" class="logo">Melody-ing</a>
+      <ul class="header-list">
+        <li>
+          <a href="research/research.html" class="header-list-link"
+            ><b>專題研究</b></a
+          >
+        </li>
+        <li>
+          <a href="interactiondesign/interaction.html" class="header-list-link"
+            ><b>互動設計</b></a
+          >
+        </li>
+        <li>
+          <a href="instagram/instagram.html" class="header-list-link"
+            ><b>活動規劃</b></a
+          >
+        </li>
+      </ul>
     </header>
 
-    <main>
-      <div class="maincontent">
-        <h1 class="name">殷語彤</h1>
-        <p class="mainp">我是來自教育心理與諮商學系的大四生殷語彤。</p>
-        <p class="mainp">
+    <main class="main">
+      <div class="container">
+        <h1 class="main-primary">殷語彤</h1>
+        <p class="main-text">我是來自教育心理與諮商學系的大四生殷語彤。</p>
+        <p class="main-text">
           在清華大學的四年當中，我接觸到了試用者經驗這個領域，並在慢慢的摸索當中發現到自己對這個領域的熱情，從此種下想要在這個領域精進自我的想法！
         </p>
       </div>
     </main>
 
-    <section>
-      <h3>我的專長</h3>
-      <div class="speciality">
-        <div class="specialityflex">
-          <a href="research/research.html" class="specialitycontent">
-            <img class="spe_img" src="img/research.jpg" />
+    <section class="specialty">
+      <div class="container">
+        <h3 class="heading-secondary">我的專長</h3>
+        <div class="grid grid--3-cols">
+          <a href="research/research.html" class="specialty-content">
+            <img class="specialty-img" src="img/research.jpg" />
             <h4>專題研究</h4>
           </a>
-
           <a
             href="interactiondesign/interaction.html"
-            class="specialitycontent"
+            class="specialty-content"
           >
-            <img class="spe_img" src="img/interaction.jpg" />
+            <img class="specialty-img" src="img/interaction.jpg" />
             <h4>互動設計</h4>
           </a>
-
-          <a href="instagram/instagram.html" class="specialitycontent">
-            <img class="spe_img" src="img/instagram.jpg" />
-            <h4>網站經營</h4>
+          <a href="instagram/instagram.html" class="specialty-content">
+            <img class="specialty-img" src="img/instagram.jpg" />
+            <h4>活動規劃</h4>
           </a>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="sentence">
-        <h4 class="senhead">
+    <section class="thought">
+      <div class="container">
+        <h4 class="thought-heading">
           清大心諮就像是一個溫暖的大家族，我在這邊結識了良師、摯友以及貴人。
           這四年是我一生中最重要的經歷，期望未來我能夠將這些經歷學以致用。
         </h4>
-        <div class="senflex">
-          <p class="senfind">希望透過這個網站您能夠更了解我！</p>
-          <a href="research/research.html" class="senbutton">Start</a>
+        <div class="thought-flex">
+          <p class="thought-text">希望透過這個網站您能夠更了解我！</p>
+          <a href="research/research.html" class="button">Start</a>
         </div>
       </div>
     </section>
 
     <footer></footer>
   </body>
-  <script src="js/footer.js"></script>
 </html>

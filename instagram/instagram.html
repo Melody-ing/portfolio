@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="CSS/instagram.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/instagram.css" />
+    <link rel="stylesheet" href="../CSS/general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,35 +18,38 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="app.js"></script>
+    <script defer src="../js/footer.js"></script>
+
     <title>個人作品集</title>
   </head>
   <body>
-    <header>
-      <div class="headercontent">
-        <a href="../index.html" class="logo">Melody-ing</a>
-        <ul class="list">
-          <li>
-            <a href="../research/research.html" class="listitem"
-              ><b>專題研究</b></a
-            >
-          </li>
-          <li>
-            <a href="../interactiondesign/interaction.html" class="listitem"
-              ><b>互動設計</b></a
-            >
-          </li>
-          <li>
-            <a href="../instagram/instagram.html" class="listitem"
-              ><b>活動規劃</b></a
-            >
-          </li>
-        </ul>
-      </div>
+    <header class="header">
+      <a href="../index.html" class="logo">Melody-ing</a>
+      <ul class="header-list">
+        <li>
+          <a href="../research/research.html" class="header-list-link"
+            ><b>專題研究</b></a
+          >
+        </li>
+        <li>
+          <a
+            href="../interactiondesign/interaction.html"
+            class="header-list-link"
+            ><b>互動設計</b></a
+          >
+        </li>
+        <li>
+          <a href="../instagram/instagram.html" class="header-list-link"
+            ><b>活動規劃</b></a
+          >
+        </li>
+      </ul>
     </header>
 
-    <main>
-      <div class="maincontent">
-        <h1 class="maintext">
+    <main class="main">
+      <div class="main-container">
+        <h1 class="main-secondary">
           國立清華大學教育心理與諮商學系23級
           <hr />
           小型畢業典禮活動
@@ -53,7 +57,7 @@
       </div>
     </main>
 
-    <section id="cards"></section>
+    <section class="container" id="cards"></section>
 
     <!-- <div class="input">
       <h1>新增卡片</h1>
@@ -84,7 +88,5 @@
     </aside>
 
     <footer></footer>
-    <script src="./app.js"></script>
-    <script src="../js/footer.js"></script>
   </body>
 </html>

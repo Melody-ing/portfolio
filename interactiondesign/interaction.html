@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="CSS/interaction.css" rel="stylesheet" />
+    <link href="../CSS/general.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,45 +18,46 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="../js/footer.js"></script>
     <title>個人作品集</title>
   </head>
   <body>
-    <header>
-      <div class="headercontent">
-        <a href="../index.html" class="logo">Melody-ing</a>
-        <ul class="list">
-          <li>
-            <a href="../research/research.html" class="listitem"
-              ><b>專題研究</b></a
-            >
-          </li>
-          <li>
-            <a href="../interactiondesign/interaction.html" class="listitem"
-              ><b>互動設計</b></a
-            >
-          </li>
-          <li>
-            <a href="../instagram/instagram.html" class="listitem"
-              ><b>活動規劃</b></a
-            >
-          </li>
-        </ul>
-      </div>
+    <header class="header">
+      <a href="../index.html" class="logo">Melody-ing</a>
+      <ul class="header-list">
+        <li>
+          <a href="../research/research.html" class="header-list-link"
+            ><b>專題研究</b></a
+          >
+        </li>
+        <li>
+          <a
+            href="../interactiondesign/interaction.html"
+            class="header-list-link"
+            ><b>互動設計</b></a
+          >
+        </li>
+        <li>
+          <a href="../instagram/instagram.html" class="header-list-link"
+            ><b>活動規劃</b></a
+          >
+        </li>
+      </ul>
     </header>
 
-    <main>
-      <div class="maincontent">
-        <h1 class="maintext">互動設計課程之使用者測試</h1>
+    <main class="main">
+      <div class="main-container">
+        <h1 class="main-secondary">互動設計課程之使用者測試</h1>
       </div>
     </main>
 
-    <section>
-      <div class="hypo">
+    <section class="intro">
+      <div class="motivation container">
         <h1>Funliday使用者測試</h1>
-        <div class="hypointro">
+        <div class="motivation-content">
           <div>
-            <h2>動機目的</h2>
-            <p class="hypo1">
+            <h2 class="heading-tertiary">動機目的</h2>
+            <p class="content-text">
               網路上存在不少專為「旅遊規劃」而設計的網站，提供使用者各種方便的功能。然而即便前述的網站提供方便的搜尋、規劃功能，但到了旅遊地，重要的導航找路，還是會回到Google地圖上。因此，我們想要設計一個能夠真正滿足使用者需求、功能完整的旅遊規劃網站。
             </p>
           </div>
@@ -63,41 +65,46 @@
         </div>
       </div>
 
-      <div class="motivation">
-        <h2>測試流程</h2>
-        <p>
-          在Funliday讓受試者規劃花蓮兩天一夜的行程，在這項測試當中會請受試者完成三項任務並填寫易用性問卷。
-        </p>
-        <img src="img/method.jpg" />
+      <div class="container">
+        <div class="step">
+          <h2 class="heading-tertiary">測試流程</h2>
+          <p class="content-text">
+            在Funliday讓受試者規劃花蓮兩天一夜的行程，在這項測試當中會請受試者完成三項任務並填寫易用性問卷。
+          </p>
+          <img src="img/method.jpg" />
+        </div>
       </div>
 
       <div class="task">
-        <h2>測試內容</h2>
-        <div class="speciality">
-          <div class="specialityflex">
-            <div class="specialitycontent">
-              <img class="spe_img" src="img/task1.jpg" />
-              <h3>Task 1</h3>
-              <h4>用Funliday搜尋景點</h4>
-            </div>
+        <div class="container">
+          <h2 class="heading-tertiary task-heading">測試內容</h2>
+          <div class="task-content">
+            <div class="grid grid--3-cols">
+              <div class="task-grid-content">
+                <img class="task-grid-img" src="img/task1.jpg" />
+                <h3>Task 1</h3>
+                <h4 class="content-text">用Funliday搜尋景點</h4>
+              </div>
 
-            <div class="specialitycontent">
-              <img class="spe_img" src="img/task2.jpg" />
-              <h3>Task 2</h3>
-              <h4>將景點安排入行程中</h4>
-            </div>
+              <div class="task-grid-content">
+                <img class="task-grid-img" src="img/task2.jpg" />
+                <h3>Task 2</h3>
+                <h4 class="content-text">將景點安排入行程中</h4>
+              </div>
 
-            <div class="specialitycontent">
-              <img class="spe_img" src="img/task3.jpg" />
-              <h3>Task 3</h3>
-              <h4>整理遊玩動線</h4>
+              <div class="task-grid-content">
+                <img class="task-grid-img" src="img/task3.jpg" />
+                <h3>Task 3</h3>
+                <h4 class="content-text">整理遊玩動線</h4>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="result">
-      <h2>測試結果</h2>
+
+    <section class="result container">
+      <h2 class="heading-tertiary">測試結果</h2>
       <div class="table">
         <table>
           <thead>
@@ -153,9 +160,10 @@
         </table>
       </div>
     </section>
+
     <section>
-      <div class="future">
-        <h3>功能性問題</h3>
+      <div class="future container">
+        <h2 class="heading-tertiary">功能性問題</h2>
         <ul>
           <li>
             由於網頁中的地圖只有簡單的直線，使用者無法明確的知道路線，因此使用者需要透過手機掃描QRcode才能得知詳細的路徑規劃。
@@ -165,7 +173,7 @@
           </li>
         </ul>
 
-        <h3>使用性問題</h3>
+        <h2 class="heading-tertiary">使用性問題</h2>
         <ul>
           <li>搜尋景點的時候必須先搜尋縣市再收尋景點，不然會找不到景點。</li>
           <li>
@@ -179,21 +187,21 @@
       <hr />
 
       <div class="question">
-        <h2>使用便條紙來進行後續網站發想</h2>
-        <div class="ad">
+        <h2 class="heading-tertiary">使用便條紙來進行後續網站發想</h2>
+        <div class="question-box">
           <img src="img/note1.jpg" alt="The Ad of promotion focus." />
           <img src="img/note2.jpg" alt="The Ad of prevention focus." />
         </div>
       </div>
 
-      <div class="after">
-        <h3>後續發展</h3>
-        <p>
+      <div class="after container">
+        <h2 class="heading-tertiary">後續發展</h2>
+        <p class="content-text">
           我們想要的網站是讓我們在旅行的過程中只需要使用一個網站就可以完成我們旅行的所有規劃，而不用一個網站找景點、一個網站排行程再用另一個網站規劃路線。因此後續的研究會以這次的研究結果為鑑，思考出一個全新架構的網站！
         </p>
       </div>
     </section>
   </body>
+
   <footer></footer>
-  <script src="../js/footer.js"></script>
 </html>
