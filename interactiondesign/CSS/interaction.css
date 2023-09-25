@@ -198,6 +198,10 @@ footer {
     width: 10rem;
   }
 
+  .task-content h3 {
+    font-size: 2.8rem;
+  }
+
   .rowtable {
     display: none;
   }
