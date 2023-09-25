@@ -18,7 +18,15 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <script defer src="../js/footer.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="../js/script.js"></script>
     <title>個人作品集</title>
   </head>
   <body>
@@ -43,6 +51,8 @@
           >
         </li>
       </ul>
+      <ion-icon class="btn menu-btn" name="menu-outline"></ion-icon>
+      <ion-icon class="btn close-btn" name="close-outline"></ion-icon>
     </header>
 
     <main class="main">
@@ -106,7 +116,7 @@
     <section class="result container">
       <h2 class="heading-tertiary">測試結果</h2>
       <div class="table">
-        <table>
+        <table class="rowtable">
           <thead>
             <tr>
               <th>完成時間、評分</th>
@@ -154,6 +164,66 @@
               <td>97.5</td>
               <td>75</td>
               <td>32.5</td>
+              <td>52.5</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="coltable">
+          <thead class="thead">
+            <tr>
+              <th></th>
+              <th>Task 1</th>
+              <th>Task 2</th>
+              <th>Task 3</th>
+              <th>SUS score</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>User 1</th>
+              <td>3m50s</td>
+              <td>2m02s</td>
+              <td>10m52s</td>
+              <td>60</td>
+            </tr>
+
+            <tr>
+              <th>User 2</th>
+              <td>2m46s</td>
+              <td>1m12s</td>
+              <td>8m28s</td>
+              <td>95</td>
+            </tr>
+
+            <tr>
+              <th>User 3</th>
+              <td>2m10s</td>
+              <td>1m27s</td>
+              <td>7m12s</td>
+              <td>97.5</td>
+            </tr>
+
+            <tr>
+              <th>User 4</th>
+              <td>2m22s</td>
+              <td>1m20s</td>
+              <td>8m40s</td>
+              <td>75</td>
+            </tr>
+            <tr>
+              <th>User 5</th>
+              <td>1m53s</td>
+              <td>1m49s</td>
+              <td>9m16s</td>
+              <td>32.5</td>
+            </tr>
+            <tr>
+              <th>User 6</th>
+              <td>4m10s</td>
+              <td>3m05s</td>
+              <td>11m10s</td>
               <td>52.5</td>
             </tr>
           </tbody>

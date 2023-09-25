@@ -170,3 +170,21 @@ footer {
   background: lightcoral;
   color: aliceblue;
 }
+
+/* ********************* */
+/* ** max-width:850px ** */
+/* ********************* */
+@media (max-width: 53em) {
+  section {
+    -webkit-column-count: 3; /*chrome,safari,opera*/
+    -moz-column-count: 3; /*firefox*/
+    column-count: 3;
+
+    -webkit-column-count: 2rem; /*chrome,safari,opera*/
+    -moz-column-count: 2rem; /*firefox*/
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}

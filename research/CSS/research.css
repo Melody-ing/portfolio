@@ -15,13 +15,14 @@
 
 .question-box {
   display: flex;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .question-box img {
-  height: 43.5rem;
-  width: auto;
+  max-height: 44rem;
   border-radius: 30px;
-  padding: 2rem;
+  object-fit: contain;
 }
 
 .result-box {
@@ -48,6 +49,7 @@ hr {
 }
 
 .result-content img {
+  object-fit: cover;
   width: 40rem;
 }
 
@@ -71,4 +73,51 @@ footer {
   background: rgba(246, 238, 255, 1);
   padding: 3.2rem;
   color: rgb(64, 56, 72);
+}
+
+/**************************/
+/* QUERIES */
+/**************************/
+
+/* ********************* */
+/* ** max-width:1200px ** */
+/* ********************* */
+@media (max-width: 75em) {
+  .question-box img {
+    height: 32rem;
+  }
+}
+
+/* ********************* */
+/* ** max-width:944px ** */
+/* ********************* */
+@media (max-width: 59em) {
+  .question-box {
+    flex-direction: column;
+  }
+
+  .result-content {
+    gap: 3.2rem;
+  }
+
+  .motivation {
+    width: 90%;
+  }
+}
+
+/* ********************* */
+/* ** max-width:720px ** */
+/* ********************* */
+@media (max-width: 45em) {
+  .result-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .result-content img {
+    height: 30rem;
+    width: 100%;
+    align-self: center;
+    object-position: top;
+  }
 }

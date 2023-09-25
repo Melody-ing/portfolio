@@ -17,6 +17,10 @@ section {
 
 /* section daily flower */
 
+.specialty {
+  margin: 0 2rem;
+}
+
 .specialty-content {
   color: rgb(64, 56, 72);
   text-decoration: none;
@@ -34,7 +38,7 @@ section {
 }
 
 .specialty-img {
-  width: 16rem;
+  max-width: 16rem;
   height: auto;
   border-radius: 20px;
   transition: all 0.4s;
@@ -50,12 +54,12 @@ section {
 }
 
 /* section sentence */
-
-.thought-heading {
-  padding: 9.6rem 4.8rem;
-  font-size: 2.4rem;
-  line-height: 1.8;
-  color: rgb(255, 255, 255);
+.thought-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  min-height: 28rem;
   border-radius: 20px;
   background-image: linear-gradient(
       rgba(34, 34, 34, 0.7),
@@ -64,16 +68,26 @@ section {
     url(group.jpg);
   background-size: cover;
   margin-bottom: 9.6rem;
+  background-position: center;
+}
+
+.thought-heading {
+  margin: 9.6rem 4.8rem;
+  font-size: 2.4rem;
+  line-height: 1.8;
+  color: rgb(255, 255, 255);
 }
 
 .thought-flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 2.4rem;
 }
 
 .thought-text {
   font-size: 3rem;
+  line-height: 1.6;
   color: rgb(58, 74, 53);
 }
 
@@ -84,4 +98,26 @@ footer {
   background: rgba(246, 238, 255, 1);
   padding: 3.2rem;
   color: rgb(64, 56, 72);
+}
+
+/**************************/
+/* QUERIES */
+/**************************/
+
+/* ********************* */
+/* ** max-width:720px ** */
+/* ********************* */
+@media (max-width: 45em) {
+  .thought-flex {
+    flex-direction: column;
+  }
+}
+
+/* ********************* */
+/* ** max-width:620px ** */
+/* ********************* */
+@media (max-width: 37em) {
+  .specialty-img {
+    width: 8rem;
+  }
 }

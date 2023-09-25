@@ -18,7 +18,15 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <script defer src="js/footer.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="js/script.js"></script>
     <title>個人作品集</title>
   </head>
   <body>
@@ -41,10 +49,12 @@
           >
         </li>
       </ul>
+      <ion-icon class="btn menu-btn" name="menu-outline"></ion-icon>
+      <ion-icon class="btn close-btn" name="close-outline"></ion-icon>
     </header>
 
     <main class="main">
-      <div class="container">
+      <div class="main-container">
         <h1 class="main-primary">殷語彤</h1>
         <p class="main-text">我是來自教育心理與諮商學系的大四生殷語彤。</p>
         <p class="main-text">
@@ -78,10 +88,12 @@
 
     <section class="thought">
       <div class="container">
-        <h4 class="thought-heading">
-          清大心諮就像是一個溫暖的大家族，我在這邊結識了良師、摯友以及貴人。
-          這四年是我一生中最重要的經歷，期望未來我能夠將這些經歷學以致用。
-        </h4>
+        <div class="thought-box">
+          <h4 class="thought-heading">
+            清大心諮就像是一個溫暖的大家族，我在這邊結識了良師、摯友以及貴人。
+            這四年是我一生中最重要的經歷，期望未來我能夠將這些經歷學以致用。
+          </h4>
+        </div>
         <div class="thought-flex">
           <p class="thought-text">希望透過這個網站您能夠更了解我！</p>
           <a href="research/research.html" class="button">Start</a>

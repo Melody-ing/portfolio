@@ -26,6 +26,7 @@
 }
 
 .motivation img {
+  object-fit: cover;
   height: 400px;
 }
 
@@ -54,7 +55,7 @@
 }
 
 .task-grid-img {
-  width: 200px;
+  width: 20rem;
   border-radius: 50%;
 }
 
@@ -70,7 +71,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 9.6rem;
+}
+
+.rowtable {
+  display: block;
+}
+
+.coltable {
+  display: none;
 }
 
 table {
@@ -79,11 +87,12 @@ table {
   font-size: 1.6rem;
   /* border: 1px solid #343a40; */
   border-collapse: collapse;
+  margin-bottom: 9.6rem;
 }
 
 th,
 td {
-  width: 6.4rem;
+  width: 100%;
   /* border: 1px solid #343a40; */
   padding: 1.6rem 2.4rem;
   text-align: left;
@@ -123,7 +132,6 @@ tbody tr:nth-child(even) {
 .question-box {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
 }
 
@@ -138,4 +146,73 @@ footer {
   background: rgba(246, 238, 255, 1);
   padding: 3.2rem;
   color: rgb(64, 56, 72);
+}
+
+/**************************/
+/* QUERIES */
+/**************************/
+
+/* ********************* */
+/* ** max-width:1200px ** */
+/* ********************* */
+@media (max-width: 75em) {
+  .motivation-content img {
+    height: 32rem;
+  }
+}
+
+/* ********************* */
+/* ** max-width:944px ** */
+/* ********************* */
+@media (max-width: 59em) {
+  /* .question-box {
+    flex-direction: column;
+  } */
+
+  .motivation-content {
+    gap: 3.2rem;
+  }
+}
+
+/* ********************* */
+/* ** max-width:670px ** */
+/* ********************* */
+@media (max-width: 42em) {
+  .motivation-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .motivation-content img {
+    height: 24rem;
+    width: 100%;
+    align-self: center;
+    object-position: bottom;
+  }
+
+  .step img {
+    display: none;
+  }
+
+  .task-grid-img {
+    width: 10rem;
+  }
+
+  .rowtable {
+    display: none;
+  }
+
+  .coltable {
+    display: block;
+  }
+
+  table {
+    padding: 0;
+    margin: inherit 0;
+    width: auto;
+  }
+
+  .question img {
+    height: 30rem;
+  }
 }
